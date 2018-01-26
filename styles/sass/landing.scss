@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(-239deg, #2c3e50 30%, #5C258D 100%);
+    color: #FFFFFF;
+    position: relative;
+    top: 25%;
+    transform: translateY(-25%);
+    font-family: 'Oxygen', sans-serif;
+}
+
+.landing {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+
+    h1 {
+        font-size: 96px;
+        margin: 0;
+    }
+
+    .landing-intro {
+        p {
+            span {
+                display: block;
+            }
+        }
+    }
+
+    .landing-actions {
+        text-align: center;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
