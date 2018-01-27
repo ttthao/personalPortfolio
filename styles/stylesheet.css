@@ -1,27 +1,101 @@
 html {
-  height: 100%; }
+  height: 100%;
+  background: linear-gradient(-239deg, #2c3e50 30%, #5C258D 100%); }
 
 body {
-  background: linear-gradient(-239deg, #2c3e50 30%, #5C258D 100%);
   color: #FFFFFF;
-  position: relative;
-  top: 25%;
-  transform: translateY(-25%);
   font-family: 'Oxygen', sans-serif; }
 
 .landing {
+  height: 100vh;
   margin: auto;
-  width: 75%;
-  text-align: center; }
-  .landing h1 {
-    font-size: 96px;
-    margin: 0; }
-  .landing .landing-intro p span {
-    display: block; }
-  .landing .landing-actions {
-    text-align: center; }
-    .landing .landing-actions a {
-      color: white;
-      text-decoration: none; }
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .landing .landing-callout {
+    padding: 32px; }
+    .landing .landing-callout h1 {
+      font-size: 96px;
+      margin: 0; }
+    .landing .landing-callout .landing-intro .mobile-photo {
+      height: 128px;
+      width: 128px;
+      background-image: url("../images/headshot.jpeg");
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      background-size: contain;
+      border-radius: 128px;
+      margin: 0px auto 0px auto;
+      background-position: center;
+      -webkit-animation: fade-in-down 1s ease both;
+      animation: fade-in-down 1s ease both; }
+    .landing .landing-callout .landing-intro p {
+      line-height: 1.75; }
+      .landing .landing-callout .landing-intro p span {
+        display: block; }
+    .landing .landing-callout .landing-actions {
+      text-align: center;
+      padding-top: 16px; }
+      .landing .landing-callout .landing-actions a {
+        color: white;
+        text-decoration: none; }
+      .landing .landing-callout .landing-actions .landing-action {
+        padding-right: 48px;
+        padding-left: 24px; }
+
+@font-face {
+  font-family: 'landing-actions';
+  src: url("fonts/landing-actions.ttf?pmspc4") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'landing-actions' !important;
+  speak: none;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-book:before {
+  content: "\e91f"; }
+
+.icon-profile:before {
+  content: "\e923"; }
+
+.icon-mail:before {
+  content: "\ea83"; }
+
+.icon-linkedin:before {
+  content: "\eac9"; }
+
+@media (max-width: 670px) {
+  .landing .landing-callout h1 {
+    font-size: 48px; }
+  .landing .landing-callout .landing-intro .mobile-photo {
+    margin: 0px auto 16px auto; } }
+@media (max-width: 450px) {
+  .landing .landing-callout .landing-actions .landing-action {
+    padding-right: 12px;
+    padding-left: 12px; } }
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
 
 /*# sourceMappingURL=stylesheet.css.map */
