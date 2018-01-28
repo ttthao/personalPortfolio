@@ -1,12 +1,10 @@
-html {
-  height: 100%;
-  background: linear-gradient(-239deg, #2c3e50 30%, #5C258D 100%); }
-
 body {
   color: #FFFFFF;
+  margin: 0;
   font-family: 'Oxygen', sans-serif; }
 
 .landing {
+  background: linear-gradient(-239deg, #2c3e50 30%, #5C258D 100%);
   height: 100vh;
   margin: auto;
   text-align: center;
@@ -23,7 +21,9 @@ body {
     padding: 32px; }
     .landing .landing-callout h1 {
       font-size: 96px;
-      margin: 0; }
+      margin: 0;
+      -webkit-animation: fade-in-right 1s ease both;
+      animation: fade-in-right 1s ease both; }
     .landing .landing-callout .landing-intro .mobile-photo {
       height: 128px;
       width: 128px;
@@ -38,8 +38,12 @@ body {
     .landing .landing-callout .landing-intro p {
       line-height: 1.75; }
       .landing .landing-callout .landing-intro p span {
-        display: block; }
+        display: block;
+        -webkit-animation: fade-in-right 2s ease both;
+        animation: fade-in-right 2s ease both; }
     .landing .landing-callout .landing-actions {
+      -webkit-animation: fade-in-up 3s ease both;
+      animation: fade-in-up 3s ease both;
       text-align: center;
       padding-top: 16px; }
       .landing .landing-callout .landing-actions a {
@@ -94,6 +98,20 @@ body {
   from {
     opacity: 0;
     transform: translate3d(0, -20%, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-20%, 0, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 80%, 0); }
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
