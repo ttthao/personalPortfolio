@@ -1,11 +1,10 @@
 body {
-    color: #FFFFFF;
     margin: 0;
     font-family: 'Oxygen', sans-serif;
-    // background: linear-gradient(-239deg, #2c3e50 30%, #5C258D 100%);
 }
 
 .landing {
+    color: #FFFFFF;
     background: linear-gradient(-239deg, #2c3e50 30%, #5C258D 100%);
     height: 100vh;
     margin: auto;
@@ -22,7 +21,6 @@ body {
 
     .landing-callout {
         padding: 32px;
-
         h1 {
             font-size: 96px;
             margin: 0;
@@ -70,7 +68,7 @@ body {
 
 @font-face {
     font-family: 'landing-actions';
-    src: url('fonts/landing-actions.ttf?pmspc4') format('truetype');
+    src: url('assets/fonts/landing-actions.ttf?mi9jev') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -79,8 +77,8 @@ body {
 [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'landing-actions' !important;
-    speak: none;
     font-size: 32px;
+    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -89,6 +87,10 @@ body {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+    content: "\e902";
 }
 
 .icon-book:before {
@@ -139,34 +141,34 @@ $breakpoint-mobile-large: 450px;
 }
 
 @keyframes fade-in-down {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -20%, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 @keyframes fade-in-right {
-	from {
-		opacity: 0;
-		transform: translate3d(-20%, 0, 0);
-	}
-	to {
-		opacity: 1;
+    from {
+        opacity: 0;
+        transform: translate3d(-20%, 0, 0);
+    }
+    to {
+        opacity: 1;
         transform: translate3d(0, 0, 0);
     }
 }
 
 @keyframes fade-in-up {
-	from {
-		opacity: 0;
-		transform: translate3d(0, 80%, 0);
-	}
-	to {
-		opacity: 1;
+    from {
+        opacity: 0;
+        transform: translate3d(0, 80%, 0);
+    }
+    to {
+        opacity: 1;
         transform: translate3d(0, 0, 0);
     }
 }

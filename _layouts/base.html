@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  </head>
+
+  <body>
+
+    <div id="main" role="main">
+      {{ content }}
+    </div>
+
+    {% include analytics.html %}
+
+  </body>
+</html>
