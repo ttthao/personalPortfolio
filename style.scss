@@ -7,13 +7,22 @@
 
 @import "variables";
 @import "landing";
+@import "materialize/materialize";
 // Syntax highlighting @import is at the bottom of this file
+
+.page-body {
+  background-color: #EEEEEE;
+}
+
+.purple-text {
+  color: #5C258D;
+}
 
 /**************/
 /* BLOG RULES */
 /**************/
 
-.container {
+.blog-container {
   margin: 0 auto;
   max-width: 740px;
   padding: 0 10px;

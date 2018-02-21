@@ -29,8 +29,8 @@ body {
         }
         .landing-intro {
             .mobile-photo {
-                height: 128px;
-                width: 128px;
+                height: 256px;
+                width: 256px;
                 background-image: url("../images/headshot.jpeg");
                 box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
                 background-size: contain;
@@ -41,6 +41,7 @@ body {
                 animation: fade-in-down 1s ease both;
             }
             p {
+                font-size: 20px;
                 line-height: 1.75;
                 span {
                     display: block;
